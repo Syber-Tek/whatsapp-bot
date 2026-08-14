@@ -1,0 +1,17 @@
+# Dependencies
+node_modules/
+
+# Secrets — NEVER commit these
+.env
+
+# WhatsApp Web session + cache (contains your account credentials)
+.wwebjs_auth/
+.wwebjs_cache/
+
+# Logs
+npm-debug.log*
+*.log
+
+# OS
+.DS_Store
+Thumbs.db

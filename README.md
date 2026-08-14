@@ -2,6 +2,8 @@
 
 Sends a greeting to a contact you choose, then holds a natural back-and-forth chat with them using Google Gemini.
 
+> **Disclaimer:** This project is for **educational purposes only**. It demonstrates how WhatsApp Web automation libraries and LLM APIs can be combined. Use it responsibly — at your own risk — and not for spam, deception, or anything that could violate WhatsApp's Terms of Service.
+
 ## ⚠️ Read this first
 
 This uses **whatsapp-web.js**, an *unofficial* library that automates your real WhatsApp Web session. It is **not** an approved integration with WhatsApp/Meta, and using it technically violates WhatsApp's Terms of Service. For light personal use (a handful of contacts, human-like pacing) the practical risk is generally low, but WhatsApp can flag or ban accounts that behave in bot-like ways — especially at higher volume or frequency. Use a secondary number if you're worried about your main account.
@@ -10,12 +12,18 @@ Also: only use this with people who know they might be talking to a bot, or for 
 
 ## Setup
 
-1. **Install dependencies**
+1. **Clone the repo**
+   ```bash
+   git clone https://github.com/Syber-Tek/whatsapp-bot.git
+   cd whatsapp-bot
+   ```
+
+2. **Install dependencies**
    ```bash
    npm install
    ```
 
-2. **Add your Gemini API key**
+3. **Add your Gemini API key**
    ```bash
    cp .env.example .env
    # then edit .env and paste your key from https://aistudio.google.com/apikey
